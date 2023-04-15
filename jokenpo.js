@@ -5,13 +5,13 @@ function jogar() {
         var sorteio = Math.floor(Math.random() * 3);
         switch (sorteio) {
             case 0:
-                document.getElementById("pc").src = "pcpedra.png";
+                document.getElementById("pc").src = "assets/pcpedra.png";
                 break;
             case 1:
-                document.getElementById("pc").src = "pcpapel.png";
+                document.getElementById("pc").src = "assets/pcpapel.png";
                 break;
             case 2:
-                document.getElementById("pc").src = "pctesoura.png";
+                document.getElementById("pc").src = "assets/pctesoura.png";
                 break;
         }
         if ((document.getElementById("pedra").checked == true && sorteio == 0) || (document.getElementById("papel").checked == true && sorteio == 1) || (document.getElementById("tesoura").checked == true && sorteio == 2)) {
@@ -26,6 +26,6 @@ function jogar() {
 }
 
 function resetar() {
-    document.getElementById("pc").src="computador.jpg";
+    document.getElementById("pc").src="assets/computador.jpg";
     document.getElementById("placar").innerHTML = "";
 }
